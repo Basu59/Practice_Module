@@ -23,7 +23,7 @@ import ac.in.cutm.erp.training.practicemodule.resourcenotfound.ResourceNotFoundE
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/traning")
+@RequestMapping("/practice")
 public class QuestionBank_Controller {
 	@Autowired
 	private QuestionBankRepository questionrepository;

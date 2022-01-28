@@ -25,7 +25,7 @@ import ac.in.cutm.erp.training.practicemodule.resourcenotfound.ResourceNotFoundE
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/pro")
+@RequestMapping("/practice")
 public class ProfileController {
 	@Autowired
 	private ProfileRepo profileRepository;
