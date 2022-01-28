@@ -28,7 +28,7 @@ public class QuestionBank_Controller {
 	@Autowired
 	private QuestionBankRepository questionrepository;
 
-	@GetMapping("/quesbank")
+	@GetMapping("/addques")
 	
 	public List<QuestionBank> getAllQuestions(){
 		return questionrepository.findAll();
