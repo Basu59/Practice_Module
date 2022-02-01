@@ -20,7 +20,6 @@ import ac.in.cutm.erp.training.practicemodule.model.QuestionBank;
 import ac.in.cutm.erp.training.practicemodule.repoitory.QuestionBankRepository;
 import ac.in.cutm.erp.training.practicemodule.resourcenotfound.ResourceNotFoundException;
 
-
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/practice")
