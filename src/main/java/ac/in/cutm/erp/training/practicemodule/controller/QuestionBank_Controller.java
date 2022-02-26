@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -35,7 +37,7 @@ public class QuestionBank_Controller {
 
 	// create a rest api
 	@PostMapping("/addques")
-	public QuestionBank createQue(@RequestBody QuestionBank qn) {
+	public QuestionBank createQue(@RequestBody @Valid QuestionBank qn) {
 		return questionrepository.save(qn);
 	}
 
@@ -55,7 +57,7 @@ public class QuestionBank_Controller {
 
 		qn.setQuestion(quesndetails.getQuestion());
 		
-		qn.setNumber(quesndetails.getNumber());
+		
 		qn.setHint(quesndetails.getHint());
 		qn.setAnswer(quesndetails.getAnswer());
         qn.setLanguage(quesndetails.getLanguage());
